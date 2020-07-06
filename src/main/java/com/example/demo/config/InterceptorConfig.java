@@ -22,7 +22,7 @@ public class InterceptorConfig implements WebMvcConfigurer {
 
     @Bean
     public User user(){
-        return new User("12");
+        return new User(1L, "zhanghongwewi", 18, "565633877@qq.com");
     }
 
     @Bean
