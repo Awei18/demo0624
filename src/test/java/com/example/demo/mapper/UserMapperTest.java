@@ -31,5 +31,6 @@ class UserMapperTest {
         List<User> userList = userMapper.selectList(null);
         Assert.assertEquals(5, userList.size());
         userList.forEach(System.out::println);
+        System.out.println("111");
     }
 }
