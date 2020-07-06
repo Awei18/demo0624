@@ -32,4 +32,9 @@ class UserMapperTest {
         Assert.assertEquals(5, userList.size());
         userList.forEach(System.out::println);
     }
+
+    @Test
+    public void test02(){
+
+    }
 }
