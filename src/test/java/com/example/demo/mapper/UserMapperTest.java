@@ -38,6 +38,6 @@ class UserMapperTest {
 
     @Test
     public void test02(){
-
+        System.out.println("hhaha");
     }
 }

@@ -17,6 +17,7 @@ public class MyController {
     public String hello(){
         String ret = "hello world";
         Calendar cal = Calendar.getInstance();
+        System.out.println("hhha");
         return ret + "日期：" + cal.toString();
     }
 }
