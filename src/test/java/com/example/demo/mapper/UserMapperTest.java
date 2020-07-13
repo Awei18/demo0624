@@ -33,5 +33,11 @@ class UserMapperTest {
         userList.forEach(System.out::println);
         System.out.println("111");
         System.out.println("222");
+        System.out.println("vscode..");
+    }
+
+    @Test
+    public void test02(){
+        System.out.println("hhaha");
     }
 }
