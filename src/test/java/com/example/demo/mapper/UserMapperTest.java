@@ -1,5 +1,7 @@
 package com.example.demo.mapper;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.example.demo.entity.User;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
@@ -8,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.sql.Wrapper;
 import java.util.List;
 
 
@@ -26,6 +29,8 @@ class UserMapperTest {
     @Test
     public void test01(){
         User user = userMapper.selectById(1);
+        Page<User> page = new Page<>(1, 10);
+        QueryWrapper<Object> objectQueryWrapper = new QueryWrapper<>();
         System.out.println(user);
         System.out.println(("----- selectAll method test ------"));
         List<User> userList = userMapper.selectList(null);

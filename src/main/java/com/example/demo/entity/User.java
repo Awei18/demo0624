@@ -3,6 +3,8 @@ package com.example.demo.entity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
+import java.util.Date;
+
 /**
  * @Description
  * @Author Zhang Hongwei
@@ -15,4 +17,5 @@ public class User {
     private String name;
     private Integer age;
     private String email;
+    private Date date;
 }

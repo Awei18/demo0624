@@ -15,19 +15,19 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @Configuration
 public class InterceptorConfig implements WebMvcConfigurer {
 
-    @Override
+    /*@Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(getMyFirstInterceptor(user())).addPathPatterns("/**");
     }
 
-    @Bean
-    public User user(){
-        return new User(1L, "zhanghongwewi", 18, "565633877@qq.com");
-    }
+    //@Bean
+    *//*public User user(){
+       // return new User(1L, "zhanghongwewi", 18, "565633877@qq.com");
+    }*//*
 
     @Bean
      public MyFirstInterceptor getMyFirstInterceptor(User user){
         System.out.println(user.toString()+"sddcdscdas");
         return new MyFirstInterceptor();
-    }
+    }*/
 }
