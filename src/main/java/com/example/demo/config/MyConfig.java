@@ -10,5 +10,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class MyConfig {
 
-
+    public void sout(){
+        System.out.println("1111111111111111111111111");
+    }
 }
