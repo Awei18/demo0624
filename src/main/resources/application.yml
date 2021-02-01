@@ -3,11 +3,12 @@ logging:
     root: info
 server:
   port: 8088
+
 spring:
   datasource:
     url: jdbc:mysql://localhost/demo0624?serverTimezone=Asia/Shanghai
     username: root
-    password: admin
+    password: ENC(kIuPkFMuDCf9rZnBDzKCTQ==)
     driver-class-name: com.mysql.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
     initialSize: 5
@@ -16,3 +17,21 @@ spring:
     maxWait: 60000
     timeBetweenEvictionRunsMillis: 60000
     minEvictableIdleTimeMillis: 300000
+  application:
+    name: demo0624
+  rabbitmq:
+    host: 192.168.207.100
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /
+    ssl:
+      enabled: false
+
+jasypt:
+  encryptor:
+    password: zhanghw7
+
+endpoints:
+  health:
+    sensitive: false
