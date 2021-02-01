@@ -3,7 +3,6 @@ logging:
     root: info
 server:
   port: 8088
-
 spring:
   datasource:
     url: jdbc:mysql://localhost/demo0624?serverTimezone=Asia/Shanghai

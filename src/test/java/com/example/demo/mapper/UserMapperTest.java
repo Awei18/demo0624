@@ -1,7 +1,5 @@
 package com.example.demo.mapper;
 
-import cn.hutool.core.date.DateTime;
-import cn.hutool.core.date.DateUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.example.demo.config.MyConfig;
@@ -14,8 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import java.util.Date;
-import java.util.HashMap;
+import java.text.ParseException;
 import java.util.List;
 import java.util.Map;
 
@@ -28,6 +25,8 @@ import java.util.Map;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 class UserMapperTest {
+    @Autowired
+    private MyConfig myConfig;
 
     @Autowired
     private UserMapper userMapper;
@@ -51,21 +50,7 @@ class UserMapperTest {
     }
 
     @Test
-    public void test02() {
-        Map<String, String> hm = new HashMap<>();
-        hm.put("ss", "sss");
-    }
-
-    @Test
-    public void provider(){
-        for (int i = 0; i < 10; i++) {
-            rabbitTemplate.convertAndSend("ex02","zhw.zaq.w", "hello, direct, 张鸿威");
-        }
-    }
-
-    @Test
-    public void testDateParse(){
-        Map<String, Object> map = new HashMap<>();
-        map.put("k1", "v1");
+    public void test02() throws ParseException {
+        myConfig.sout();
     }
 }
